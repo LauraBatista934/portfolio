@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laura de Freitas Macedo / UX &amp; UI Designer</title>
+<meta name="description" content="Portfolio of Laura de Freitas Macedo, a UX/UI designer from Porto Alegre, Brazil. Three projects, real constraints, clear interfaces.">
+<meta name="author" content="Laura de Freitas Macedo">
+<meta name="theme-color" content="#2B0B33">
+<link rel="canonical" href="https://laurabatista934.github.io/portfolio/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Laura de Freitas Macedo / UX &amp; UI Designer">
+<meta property="og:description" content="Clear thinking, colourful interfaces. Selected work in UX, UI and communication.">
+<meta property="og:url" content="https://laurabatista934.github.io/portfolio/">
+<meta property="og:image" content="https://laurabatista934.github.io/portfolio/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232B0B33'/%3E%3Ctext x='14' y='46' font-family='Georgia,serif' font-size='40' fill='%23D6F24E'%3EL%3C/text%3E%3C/svg%3E">
+
+<style>
+  @font-face { font-family:'FD'; src:url('fonts/F-Display.ttf') format('truetype'); font-display:swap; }
+  @font-face { font-family:'FB'; src:url('fonts/F-Bold.ttf') format('truetype'); font-display:swap; }
+  @font-face { font-family:'FI'; src:url('fonts/F-Italic.ttf') format('truetype'); font-style:italic; font-display:swap; }
+  @font-face { font-family:'FIB'; src:url('fonts/F-ItalicBold.ttf') format('truetype'); font-style:italic; font-display:swap; }
+  @font-face { font-family:'M4'; src:url('fonts/M-400.ttf') format('truetype'); font-display:swap; }
+  @font-face { font-family:'M5'; src:url('fonts/M-500.ttf') format('truetype'); font-display:swap; }
+  @font-face { font-family:'M6'; src:url('fonts/M-600.ttf') format('truetype'); font-display:swap; }
+  @font-face { font-family:'M7'; src:url('fonts/M-700.ttf') format('truetype'); font-display:swap; }
+  @font-face { font-family:'M8'; src:url('fonts/M-800.ttf') format('truetype'); font-display:swap; }
+
+  :root{
+    --ink:#1B0A1E;
+    --plum:#2B0B33;
+    --plum-deep:#1B0A1E;
+    --wine:#5A0F2E;
+    --mag:#FF2E6E;
+    --tang:#FF6B2C;
+    --violet:#7A3CFF;
+    --lime:#D6F24E;
+    --teal:#00BFA6;
+    --blush:#FFF0F5;
+    --lav:#F1EEFF;
+    --peach:#FFF1E9;
+    --navy:#0B1220;
+    --grey:#6E6472;
+    --line:rgba(27,10,30,.14);
+    --wrap:1160px;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:#fff; color:var(--ink);
+    font-family:'M4', Arial, sans-serif;
+    font-size:17px; line-height:1.66;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; height:auto; }
+
+  .wrap{ width:100%; max-width:var(--wrap); margin:0 auto; padding:0 40px; }
+
+  h1,h2,h3,h4{ font-weight:400; }
+  h1,h2{ font-family:'FB', Georgia, serif; letter-spacing:-.021em; line-height:1.03; }
+  h1 em,h2 em{ font-family:'FIB', Georgia, serif; font-style:italic; }
+  h2{ font-size:clamp(2.3rem, 4.6vw, 3.9rem); }
+
+  .kicker{
+    font-family:'M7'; font-size:.68rem; letter-spacing:.2em;
+    text-transform:uppercase; color:var(--mag);
+  }
+  .kicker .n{ font-family:'M8'; }
+  .micro{
+    font-family:'M6'; font-size:.66rem; letter-spacing:.15em;
+    text-transform:uppercase; color:var(--grey);
+  }
+  .body{ color:#3A2440; }
+  .body b{ font-family:'M7'; font-weight:400; color:var(--ink); }
+
+  /* ============================== NAV */
+  .nav{
+    position:fixed; inset:0 0 auto 0; z-index:50;
+    background:rgba(43,11,51,.92);
+    -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(255,255,255,.11);
+  }
+  .nav-in{
+    max-width:var(--wrap); margin:0 auto; padding:0 40px;
+    height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px;
+  }
+  .nav-name{
+    font-family:'M6'; font-size:.72rem; letter-spacing:.18em;
+    text-transform:uppercase; color:#fff; white-space:nowrap;
+  }
+  .nav-name s{ display:inline-block; width:8px; height:8px; background:var(--lime); margin-right:9px; vertical-align:1px; }
+  .nav-links{ display:flex; align-items:center; gap:30px; }
+  .nav-links a{
+    font-family:'M6'; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
+    color:rgba(255,255,255,.72); transition:color .18s ease;
+  }
+  .nav-links a:hover{ color:#fff; }
+  .nav-pdf{
+    font-family:'M7'; font-size:.7rem; letter-spacing:.13em; text-transform:uppercase;
+    background:var(--lime); color:var(--plum) !important;
+    padding:10px 18px; border-radius:100px; white-space:nowrap;
+    transition:transform .18s ease, background .18s ease;
+  }
+  .nav-pdf:hover{ transform:translateY(-1px); background:#e4ff66; }
+  .nav-pdf .short{ display:none; }
+
+  /* ============================== HERO */
+  .hero{
+    position:relative; overflow:hidden;
+    background:var(--plum); color:#fff;
+    padding:118px 0 0;
+    min-height:100svh; display:flex; flex-direction:column;
+  }
+  .hero-glow{
+    position:absolute; width:900px; height:900px; border-radius:50%;
+    right:-260px; top:-300px; pointer-events:none;
+    background:radial-gradient(circle at 50% 50%, rgba(255,46,110,.5), rgba(255,46,110,0) 62%);
+  }
+  .hero-grid{
+    position:relative; flex:1 1 auto;
+    display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:center;
+    padding-bottom:56px;
+  }
+  .hero-copy{ padding-bottom:24px; }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:'M7'; font-size:.7rem; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--lime);
+  }
+  .brand s{ display:block; width:9px; height:9px; background:var(--lime); }
+  .hero-name{
+    margin:34px 0 0;
+    font-size:clamp(3.5rem, 8.4vw, 7.2rem);
+    line-height:.93; letter-spacing:-.033em;
+    font-family:'FD', Georgia, serif;
+  }
+  .hero-name span{ display:block; }
+  .hero-name em{
+    display:block; font-family:'FI', Georgia, serif; font-style:italic;
+    font-size:.815em; line-height:1.02; color:var(--lime); padding-left:.05em;
+  }
+  .hero-role{
+    margin-top:34px;
+    font-family:'M6'; font-size:.78rem; letter-spacing:.17em; text-transform:uppercase;
+  }
+  .hero-role s{ color:var(--mag); text-decoration:none; }
+  .hero-tag{
+    margin-top:16px; max-width:390px;
+    font-family:'FI', Georgia, serif; font-style:italic;
+    font-size:clamp(1.25rem, 2.1vw, 1.6rem); line-height:1.32;
+    color:rgba(255,255,255,.8);
+  }
+  .hero-photo{ position:relative; justify-self:end; width:100%; max-width:420px; }
+  .hero-photo .arch{
+    position:absolute; inset:16px -18px -16px 18px;
+    background:var(--mag); border-radius:230px 230px 14px 14px;
+    opacity:.95;
+  }
+  .hero-photo img{
+    position:relative; display:block; width:100%;
+    aspect-ratio:4/5.3; object-fit:cover; object-position:52% 30%;
+    border-radius:230px 230px 14px 14px;
+    filter:saturate(1.03) contrast(1.02);
+  }
+  .hero-foot{
+    position:relative; border-top:1px solid rgba(255,255,255,.16);
+    padding:20px 0 26px;
+  }
+  .hero-foot .wrap{
+    display:flex; justify-content:space-between; align-items:baseline; gap:24px;
+    font-family:'M5'; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+    color:rgba(255,255,255,.55);
+  }
+  .hero-foot a:hover{ color:#fff; }
+  .hero-foot .r{ color:var(--lime); font-family:'M7'; }
+
+  /* ============================== ABOUT */
+  .about{ padding:104px 0 96px; scroll-margin-top:64px; }
+  .sec-head{
+    display:grid; grid-template-columns:1.05fr .95fr; gap:64px; align-items:end;
+  }
+  .sec-head h2{ margin-top:18px; color:var(--ink); }
+  .sec-head h2 em{ color:var(--mag); }
+  .sec-head .lede{ font-size:1.1rem; line-height:1.6; color:#3A2440; padding-bottom:6px; }
+  .about-cols{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:44px;
+    margin-top:56px; padding-top:40px; border-top:1px solid var(--line);
+  }
+  .about-cols p{ font-size:1rem; line-height:1.72; color:#3A2440; }
+  .about-cols p::first-line{ color:var(--ink); }
+
+  .band{
+    margin-top:64px; background:var(--lime); color:var(--plum);
+    padding:14px 22px; display:flex; justify-content:space-between; align-items:baseline; gap:20px;
+  }
+  .band .t{ font-family:'M8'; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; }
+  .band .s{ font-family:'FI'; font-style:italic; font-size:1rem; }
+
+  .howgrid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:20px;
+  }
+  .how{
+    border-top:7px solid var(--mag); background:#fff; padding:26px 24px 30px;
+    box-shadow:0 2px 18px rgba(43,11,51,.07);
+  }
+  .how.c2{ border-color:var(--violet); }
+  .how.c3{ border-color:var(--teal); }
+  .how.c4{ border-color:var(--tang); }
+  .how .num{ font-family:'FI'; font-style:italic; font-size:1.45rem; line-height:1; color:var(--mag); }
+  .how.c2 .num{ color:var(--violet); }
+  .how.c3 .num{ color:var(--teal); }
+  .how.c4 .num{ color:var(--tang); }
+  .how h3{
+    font-family:'M8'; font-size:.78rem; letter-spacing:.13em; text-transform:uppercase;
+    margin:14px 0 10px;
+  }
+  .how p{ font-size:.93rem; line-height:1.6; color:#4A3550; }
+
+  .skills{ display:flex; flex-wrap:wrap; gap:9px; margin-top:44px; }
+  .skill{
+    font-family:'M6'; font-size:.73rem; letter-spacing:.04em;
+    padding:7px 16px; border:1px solid rgba(43,11,51,.22); border-radius:100px; color:#4A3550;
+  }
+  .about-end{
+    display:grid; grid-template-columns:1.3fr .7fr; gap:56px; align-items:end;
+    margin-top:56px; padding-top:40px; border-top:1px solid var(--line);
+  }
+  .about-end .q{
+    font-family:'FI', Georgia, serif; font-style:italic;
+    font-size:clamp(1.4rem, 2.5vw, 1.95rem); line-height:1.3; color:var(--plum);
+  }
+  .about-end .nr{ font-size:.9rem; line-height:1.6; color:var(--grey); text-align:right; }
+  .about-end .nr b{ font-family:'M7'; font-weight:400; color:var(--ink); }
+
+  /* ============================== WORK INDEX */
+  .index{ background:var(--plum); color:#fff; padding:96px 0 88px; }
+  .index .kicker{ color:var(--lime); }
+  .index h2{ color:#fff; margin-top:18px; }
+  .index h2 em{ color:var(--lime); }
+  .rows{ margin-top:56px; }
+  .row{
+    display:grid; grid-template-columns:54px 1.05fr 1.35fr auto; gap:34px; align-items:baseline;
+    padding:34px 0; border-top:2px solid var(--mag);
+    transition:padding-left .22s ease, background .22s ease;
+  }
+  .row:nth-child(2){ border-top-color:var(--violet); }
+  .row:nth-child(3){ border-top-color:var(--lime); }
+  .row:last-child{ border-bottom:1px solid rgba(255,255,255,.22); }
+  .row:hover{ padding-left:14px; background:rgba(255,255,255,.035); }
+  .row .num{ font-family:'FI'; font-style:italic; font-size:1.15rem; color:var(--lime); }
+  .row .nm{ font-family:'FB'; font-size:clamp(1.35rem, 2.2vw, 1.8rem); letter-spacing:-.012em; line-height:1.15; }
+  .row .ds{ font-size:.95rem; line-height:1.6; color:rgba(255,255,255,.64); }
+  .row .tag{
+    font-family:'M6'; font-size:.65rem; letter-spacing:.16em; text-transform:uppercase;
+    white-space:nowrap; color:var(--plum); background:var(--lime);
+    padding:6px 14px; border-radius:100px;
+  }
+  .row:nth-child(2) .tag{ background:var(--violet); color:#fff; }
+  .row:nth-child(3) .tag{ background:var(--mag); color:#fff; }
+  .index .note{
+    margin-top:40px; font-family:'FI', Georgia, serif; font-style:italic;
+    font-size:1.05rem; color:rgba(255,255,255,.55); max-width:720px;
+  }
+
+  /* ============================== CASE SHELL */
+  .case{ padding:100px 0 96px; scroll-margin-top:64px; }
+  .case-top{ display:grid; grid-template-columns:1fr auto; gap:40px; align-items:start; }
+  .case-top h2{ margin-top:16px; }
+  .case-top h2 em{ color:var(--mag); }
+  .case .nda{ text-align:right; padding-top:6px; }
+  .case .nda .micro{ color:#B9A8BE; }
+  .case .nda p{ font-size:.85rem; line-height:1.5; color:var(--grey); margin-top:4px; }
+
+  .meta{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:28px;
+    margin-top:40px; padding:22px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  }
+  .meta .k{ font-family:'M6'; font-size:.62rem; letter-spacing:.16em; text-transform:uppercase; color:#A798A9; margin-bottom:5px; }
+  .meta .v{ font-family:'M5'; font-size:.87rem; line-height:1.45; }
+
+  .cols{ display:grid; grid-template-columns:1.55fr .85fr; gap:72px; margin-top:52px; }
+  .prose p{ font-size:1rem; line-height:1.72; color:#3A2440; }
+  .prose p + p{ margin-top:20px; }
+
+  .pull{
+    border-left:6px solid var(--mag); padding:6px 0 6px 24px; margin:36px 0 10px;
+    font-family:'FI', Georgia, serif; font-style:italic;
+    font-size:clamp(1.3rem, 2.2vw, 1.7rem); line-height:1.34; color:var(--wine);
+  }
+  .pull-k{ padding-left:24px; }
+
+  ul.list{ list-style:none; margin-top:8px; }
+  ul.list li{
+    font-size:.97rem; line-height:1.6; color:#3A2440;
+    padding-left:22px; text-indent:-22px; margin-bottom:13px;
+  }
+  ul.list li::before{ content:"›"; color:var(--mag); font-family:'M7'; padding-right:10px; }
+  ul.list li b{ font-family:'M7'; font-weight:400; color:var(--ink); }
+
+  .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:30px; }
+  .chip{
+    font-family:'M6'; font-size:.71rem; letter-spacing:.05em;
+    padding:9px 17px; border-radius:100px; background:var(--plum); color:#fff;
+  }
+  .chip.o{ background:transparent; color:var(--plum); border:1px solid rgba(43,11,51,.3); }
+
+  .steps .micro{ margin-bottom:18px; }
+  .step{ display:flex; gap:13px; padding-bottom:22px; }
+  .step .n{
+    width:30px; height:30px; flex:0 0 30px; border-radius:50%;
+    background:var(--plum); color:#fff; font-family:'M7'; font-size:.72rem;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .step:nth-child(3) .n{ background:var(--mag); }
+  .step:nth-child(4) .n{ background:var(--violet); }
+  .step:nth-child(5) .n{ background:var(--teal); }
+  .step h4{ font-family:'M8'; font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; margin-bottom:4px; }
+  .step p{ font-size:.9rem; line-height:1.55; color:#4A3550; }
+
+  .note-box{ margin-top:26px; background:var(--peach); padding:24px 26px; border-radius:8px; }
+  .note-box .k{ font-family:'M8'; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:#B8471F; margin-bottom:8px; }
+  .note-box p{ font-size:.94rem; line-height:1.62; color:#4A3550; }
+  .note-box.lav{ background:var(--lav); }
+  .note-box.lav .k{ color:var(--violet); }
+
+  /* IA diagram */
+  .ia{ margin-top:44px; border-top:1px solid var(--line); padding-top:22px; }
+  .ia-h{ display:flex; justify-content:space-between; gap:20px; margin-bottom:18px; }
+  .ia-row{ display:flex; align-items:stretch; }
+  .node{
+    flex:1 1 0; border:1px solid rgba(43,11,51,.3); border-radius:6px;
+    padding:16px 16px 18px; background:#fff;
+  }
+  .node .k{ font-family:'M8'; font-size:.58rem; letter-spacing:.14em; color:#B9A8BE; margin-bottom:6px; }
+  .node .t{ font-family:'FB'; font-size:1.02rem; line-height:1.15; }
+  .node .s{ font-size:.76rem; line-height:1.4; color:var(--grey); margin-top:5px; }
+  .node.n2{ border:2px solid var(--mag); }
+  .node.n2 .k{ color:var(--mag); }
+  .node.n3{ border:2px solid var(--violet); }
+  .node.n3 .k{ color:var(--violet); }
+  .node.n4{ border:2px solid var(--teal); }
+  .node.n4 .k{ color:#009A85; }
+  .node.ghost{ border:1px dashed rgba(43,11,51,.24); background:transparent; }
+  .node.ghost .t{ color:#9C8CA1; }
+  .arw{ flex:0 0 26px; align-self:center; height:0; border-top:1px solid rgba(43,11,51,.35); position:relative; }
+  .arw::after{
+    content:''; position:absolute; right:0; top:-4px; width:6px; height:6px;
+    border-top:1px solid rgba(43,11,51,.35); border-right:1px solid rgba(43,11,51,.35);
+    transform:rotate(45deg);
+  }
+
+  /* ============================== FEED */
+  .feed{ background:var(--navy); color:#fff; padding:96px 0 100px; scroll-margin-top:64px; position:relative; overflow:hidden; }
+  .feed .glow{
+    position:absolute; width:1100px; height:700px; left:50%; top:40px; transform:translateX(-50%);
+    background:radial-gradient(ellipse at 50% 50%, rgba(46,64,255,.3), rgba(11,18,32,0) 66%);
+    pointer-events:none;
+  }
+  .feed .inner{ position:relative; }
+  .feed .kicker{ color:#7FA6FF; }
+  .feed h2{ color:#fff; margin-top:18px; max-width:820px; }
+  .feed h2 em{ color:#9DB2FF; }
+  .feed .sub{ margin-top:22px; max-width:560px; font-size:1.02rem; line-height:1.65; color:rgba(255,255,255,.62); }
+  .tagline{ display:flex; flex-wrap:wrap; gap:26px; margin-top:26px; }
+  .tagline span{
+    font-family:'M7'; font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; color:#7FA6FF;
+  }
+  .phones{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:26px; margin-top:56px; align-items:start;
+  }
+  .phone{ margin:0; }
+  .phone img{
+    display:block; width:100%; border-radius:16px;
+    box-shadow:0 26px 60px rgba(0,0,0,.55);
+    outline:1px solid rgba(255,255,255,.13);
+  }
+  .phone figcaption{
+    margin-top:14px; font-family:'M5'; font-size:.64rem; letter-spacing:.13em;
+    text-transform:uppercase; color:rgba(255,255,255,.45); text-align:center;
+  }
+
+  .states-sec{ padding:96px 0 88px; }
+  .states-sec h2{ margin-top:16px; max-width:800px; }
+  .states-sec h2 em{ color:var(--mag); }
+  .states-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; margin-top:48px; }
+  .state{
+    display:grid; grid-template-columns:118px 1fr; gap:18px; align-items:baseline;
+    padding:17px 0; border-bottom:1px solid var(--line);
+  }
+  .state .nm{ font-family:'M7'; font-size:.88rem; display:flex; align-items:baseline; gap:10px; }
+  .state .dot{ width:8px; height:8px; border-radius:50%; flex:0 0 8px; transform:translateY(-1px); }
+  .state .tx{ font-size:.9rem; line-height:1.55; color:#5A4760; }
+  .dgrid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .dcard{ padding:26px 24px; border-radius:8px; }
+  .dcard.d1{ background:var(--blush); }
+  .dcard.d2{ background:var(--lav); }
+  .dcard.d3{ background:var(--peach); }
+  .dcard.d4{ background:#E9FBF7; }
+  .dcard .num{ font-family:'FI'; font-style:italic; font-size:1.4rem; line-height:1; color:var(--mag); }
+  .dcard.d2 .num{ color:var(--violet); }
+  .dcard.d3 .num{ color:var(--tang); }
+  .dcard.d4 .num{ color:#009A85; }
+  .dcard h4{ font-family:'M8'; font-size:.82rem; line-height:1.3; margin:12px 0 9px; }
+  .dcard p{ font-size:.9rem; line-height:1.6; color:#4A3550; }
+  .states-grid .note-box{ margin-top:26px; }
+
+  /* ============================== EGALI */
+  .egali{ padding:100px 0 96px; scroll-margin-top:64px; }
+  .egali .kicker{ color:var(--teal); }
+  .egali h2 em{ color:var(--teal); }
+  .blocks .eb{ padding-left:22px; border-left:4px solid var(--mag); margin-bottom:28px; }
+  .blocks .eb.b2{ border-color:var(--violet); }
+  .blocks .eb.b3{ border-color:var(--teal); }
+  .eb .k{ font-family:'M8'; font-size:.63rem; letter-spacing:.16em; text-transform:uppercase; color:#A798A9; margin-bottom:6px; }
+  .eb p{ font-size:.95rem; line-height:1.62; color:#3A2440; }
+  .eb b{ font-family:'M7'; font-weight:400; color:var(--ink); }
+  .quote{
+    background:var(--plum); color:#fff; padding:32px 34px; border-radius:10px; margin-top:12px;
+  }
+  .quote p{
+    font-family:'FI', Georgia, serif; font-style:italic;
+    font-size:clamp(1.15rem, 1.8vw, 1.4rem); line-height:1.38;
+  }
+  .quote .au{ font-family:'M6'; font-size:.63rem; letter-spacing:.16em; text-transform:uppercase; color:var(--lime); margin-top:18px; }
+  .close{
+    margin-top:40px; padding-top:26px; border-top:1px solid var(--line);
+    font-family:'FI', Georgia, serif; font-style:italic;
+    font-size:clamp(1.15rem, 1.9vw, 1.4rem); line-height:1.4; color:var(--wine);
+  }
+
+  /* ============================== MORE */
+  .more{ background:var(--blush); padding:96px 0 88px; }
+  .more-head{ display:grid; grid-template-columns:1fr auto; gap:48px; align-items:end; }
+  .more-head h2{ margin-top:16px; }
+  .more-head h2 em{ color:var(--mag); }
+  .more-head .side{ max-width:280px; text-align:right; font-size:.92rem; line-height:1.6; color:#7A657E; }
+  .duo{ display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:52px; }
+  .tile{ background:#fff; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; }
+  .tile .hd{
+    font-family:'M8'; font-size:.63rem; letter-spacing:.16em; text-transform:uppercase;
+    padding:12px 20px; display:flex; justify-content:space-between; gap:16px;
+  }
+  .tile .bd{ padding:24px 26px 22px; flex:1 1 auto; display:flex; flex-direction:column; }
+  .tile h4{ font-family:'FB'; font-size:clamp(1.15rem, 1.9vw, 1.4rem); line-height:1.18; letter-spacing:-.01em; margin:0 0 12px; }
+  .tile p{ font-size:.94rem; line-height:1.65; color:#4A3550; }
+  .tile .meta-line{
+    margin-top:auto; padding-top:18px; border-top:1px solid rgba(43,11,51,.1);
+    font-family:'M6'; font-size:.62rem; letter-spacing:.13em; text-transform:uppercase; color:#A798A9;
+    display:flex; justify-content:space-between; gap:14px;
+  }
+  .quest-imgs{ display:flex; gap:8px; margin-bottom:22px; }
+  .qi{ position:relative; flex:1 1 0; height:150px; border-radius:6px; overflow:hidden; background:#D81A5C; }
+  .qi img{
+    width:100%; height:100%; object-fit:cover; object-position:50% 45%; display:block;
+    filter:grayscale(1) contrast(1.45) brightness(1.22); mix-blend-mode:multiply; opacity:.94;
+  }
+  .term{
+    background:#150A1A; border-radius:8px; padding:20px 22px;
+    font-family:Consolas,'Courier New',monospace; font-size:.75rem; line-height:1.6;
+    color:#D6C7D9; margin-bottom:22px; overflow-x:auto; white-space:nowrap;
+  }
+  .term .pr{ color:var(--lime); }
+  .term .sq{ color:#7FB6FF; }
+  .term .ok{ color:#66E3C4; }
+
+  .bottomband{
+    display:grid; grid-template-columns:1fr 1.35fr; gap:56px;
+    margin-top:56px; padding-top:34px; border-top:1px solid rgba(43,11,51,.16);
+  }
+  .bottomband .k{ font-family:'M8'; font-size:.6rem; letter-spacing:.16em; text-transform:uppercase; color:var(--tang); margin-bottom:12px; }
+  .bottomband p{ font-size:.9rem; line-height:1.62; color:#4A3550; }
+  .sw{ display:flex; gap:6px; margin-bottom:14px; }
+  .sw s{ display:block; flex:1 1 0; height:26px; border-radius:4px; }
+  .bb-r{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .bb-r .it .k{ color:var(--mag); margin-bottom:8px; }
+  .bb-r .it .v{ font-size:.87rem; line-height:1.55; color:#4A3550; }
+  .bb-r .it .v b{ font-family:'M7'; font-weight:400; color:var(--ink); }
+
+  /* ============================== CONTACT */
+  .contact{ background:var(--plum); color:#fff; padding:104px 0 72px; scroll-margin-top:64px; position:relative; overflow:hidden; }
+  .contact .big{
+    font-family:'FD', Georgia, serif;
+    font-size:clamp(4rem, 11vw, 8.5rem); line-height:.88; letter-spacing:-.035em;
+    margin-top:14px;
+  }
+  .contact .big em{ font-family:'FI', Georgia, serif; font-style:italic; color:var(--lime); }
+  .contact-head{
+    display:grid; grid-template-columns:1fr auto; gap:56px; align-items:end;
+  }
+  .contact-head .por{
+    width:250px; aspect-ratio:4/4.6; border-radius:160px 160px 8px 8px; overflow:hidden;
+    outline:5px solid var(--mag); margin-bottom:6px;
+  }
+  .contact-head .por img{ width:100%; height:100%; object-fit:cover; object-position:48% 24%; }
+  .contact-grid{ display:grid; grid-template-columns:1.15fr .85fr; gap:64px; margin-top:52px; align-items:start; }
+  .clist .item{ padding:16px 0; border-top:1px solid rgba(255,255,255,.2); }
+  .clist .item:last-child{ border-bottom:1px solid rgba(255,255,255,.2); }
+  .clist .k{ font-family:'M6'; font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.45); }
+  .clist .v{ font-family:'M5'; font-size:1.12rem; margin-top:5px; }
+  .clist .v b{ font-family:'M7'; font-weight:400; }
+  .clist a:hover{ color:var(--lime); }
+  .avail{ background:var(--lime); color:var(--plum); padding:28px 30px; border-radius:10px; max-width:420px; }
+  .avail .t{ font-family:'M8'; font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom:12px; }
+  .avail p{ font-family:'M4', Arial, sans-serif; font-size:1rem; line-height:1.6; }
+  .contact-cta{ margin-top:34px; display:flex; flex-wrap:wrap; gap:14px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:'M7'; font-size:.75rem; letter-spacing:.13em; text-transform:uppercase;
+    padding:15px 26px; border-radius:100px;
+    background:var(--mag); color:#fff;
+    transition:transform .18s ease, background .18s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); background:#ff4b82; }
+  .btn.ghost{ background:transparent; border:1px solid rgba(255,255,255,.4); }
+  .btn.ghost:hover{ background:rgba(255,255,255,.08); }
+  .sig{
+    margin-top:64px; padding-top:24px; border-top:1px solid rgba(255,255,255,.2);
+    font-family:'FI', Georgia, serif; font-style:italic; font-size:1.3rem; line-height:1.4;
+    color:rgba(255,255,255,.78);
+  }
+
+  footer{ background:var(--plum-deep); color:rgba(255,255,255,.5); padding:30px 0; }
+  footer .wrap{ display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; align-items:baseline; }
+  footer .f{ font-family:'M5'; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; }
+  footer a:hover{ color:#fff; }
+
+  /* ============================== RESPONSIVE */
+  @media (max-width: 980px){
+    .wrap,.nav-in{ padding:0 28px; }
+    .sec-head{ grid-template-columns:1fr; gap:26px; }
+    .about-cols{ grid-template-columns:1fr 1fr; gap:26px 36px; }
+    .howgrid{ grid-template-columns:1fr 1fr; }
+    .about-end{ grid-template-columns:1fr; gap:22px; }
+    .about-end .nr{ text-align:left; }
+    .row{ grid-template-columns:36px 1fr auto; gap:20px; }
+    .row .num{ grid-column:1; grid-row:1; }
+    .row .nm{ grid-column:2; grid-row:1; }
+    .row .tag{ grid-column:3; grid-row:1; justify-self:end; }
+    .row .ds{ grid-column:2 / 4; grid-row:2; }
+    .cols{ grid-template-columns:1fr; gap:44px; }
+    .states-grid{ grid-template-columns:1fr; gap:44px; }
+    .duo{ grid-template-columns:1fr; }
+    .bottomband{ grid-template-columns:1fr; gap:32px; }
+    .contact-grid{ grid-template-columns:1fr; gap:44px; }
+    .avail{ max-width:none; }
+    .more-head{ grid-template-columns:1fr; gap:20px; }
+    .more-head .side{ text-align:left; }
+    .ia-row{ flex-wrap:wrap; gap:10px; }
+    .node{ flex:1 1 28%; }
+    .arw{ display:none; }
+    .meta{ grid-template-columns:1fr 1fr; gap:20px 28px; }
+  }
+
+  @media (max-width: 720px){
+    body{ font-size:16px; }
+    .wrap,.nav-in{ padding:0 20px; }
+    .nav-in{ height:58px; }
+    .nav-links{ gap:14px; }
+    .nav-links a:not(.nav-pdf){ display:none; }
+    .nav-pdf{ padding:9px 15px; }
+    .nav-pdf .long{ display:none; }
+    .nav-pdf .short{ display:inline; }
+    .hero{ padding-top:96px; min-height:0; }
+    .hero-grid{ grid-template-columns:1fr; gap:40px; padding-top:24px; padding-bottom:40px; }
+    .hero-copy{ padding-bottom:0; }
+    .hero-photo{ justify-self:start; max-width:340px; margin-bottom:6px; }
+    .hero-name{ font-size:clamp(3rem, 14.5vw, 4.6rem); }
+    .hero-role{ margin-top:26px; font-size:.68rem; letter-spacing:.13em; }
+    .hero-foot .wrap{ flex-wrap:wrap; gap:8px; font-size:.62rem; }
+    .about,.case,.egali,.states-sec,.index,.feed,.more{ padding:72px 0 64px; }
+    .contact{ padding:80px 0 56px; }
+    .about-cols{ margin-top:36px; padding-top:28px; grid-template-columns:1fr; gap:22px; max-width:none; }
+    .howgrid{ grid-template-columns:1fr; }
+    .band{ margin-top:44px; flex-direction:column; gap:4px; align-items:flex-start; padding:14px 18px; }
+    .row{ grid-template-columns:30px 1fr; gap:12px 16px; padding:26px 0; }
+    .row .num{ grid-column:1; grid-row:1; }
+    .row .nm{ grid-column:2; grid-row:1; font-size:1.4rem; }
+    .row .ds{ grid-column:2; grid-row:auto; }
+    .row .tag{ grid-column:2; grid-row:auto; justify-self:start; margin-top:6px; }
+    .row:hover{ padding-left:0; }
+    .case-top{ grid-template-columns:1fr; gap:18px; }
+    .case .nda{ text-align:left; }
+    .meta{ margin-top:30px; }
+    .meta .v{ font-size:.82rem; }
+    .pull{ margin:30px 0 8px; }
+    .ia-row{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .node{ flex:none; }
+    .node.ghost{ grid-column:1 / -1; }
+    .phones{ grid-template-columns:1fr 1fr; gap:14px; margin-top:40px; }
+    .phone img{ border-radius:12px; }
+    .dgrid{ grid-template-columns:1fr; }
+    .state{ grid-template-columns:1fr; gap:4px; }
+    .contact-head{ gap:22px; }
+    .contact-head .por{ width:140px; outline-width:4px; margin-bottom:4px; }
+    .contact-grid{ margin-top:40px; }
+    .quote{ padding:26px 24px; }
+    .bb-r{ grid-template-columns:1fr; gap:20px; }
+    .term{ font-size:.66rem; }
+    .qi{ height:110px; }
+    .tile .bd{ padding:20px 20px 18px; }
+    .contact .big{ font-size:clamp(3.6rem, 17vw, 5.4rem); }
+    .sig{ margin-top:44px; font-size:1.15rem; }
+    footer .wrap{ flex-direction:column; gap:8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="nav-name" href="#top"><s></s>Laura de Freitas</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-pdf" href="portfolio.pdf" target="_blank" rel="noopener"><span class="long">Download PDF</span><span class="short">PDF</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================== HERO -->
+<header class="hero" id="top">
+  <div class="hero-glow"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="brand"><s></s> Portfolio / 2026</div>
+      <h1 class="hero-name">
+        <span>Laura</span>
+        <em>de Freitas</em>
+        <span>Macedo</span>
+      </h1>
+      <div class="hero-role">UX / UI Designer <s>/</s> Porto Alegre, Brazil</div>
+      <p class="hero-tag">Clear thinking,<br>colourful interfaces.</p>
+    </div>
+    <div class="hero-photo">
+      <div class="arch"></div>
+      <img src="img/portrait.jpg" alt="Portrait of Laura de Freitas Macedo" width="900" height="920">
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="wrap">
+      <span><a href="mailto:mrs.laurafmsb@gmail.com">mrs.laurafmsb@gmail.com</a></span>
+      <span><a href="https://www.linkedin.com/in/lauradefreitasmacedo/" target="_blank" rel="noopener">linkedin / lauradefreitasmacedo</a></span>
+      <span class="r">Scroll ↓</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== ABOUT -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">01 / About</div>
+        <h2>Hi, I'm&nbsp;<em>Laura.</em></h2>
+      </div>
+      <p class="lede">I'm a UX/UI designer from Porto Alegre, Brazil. I came to design through words and products, and I still start every screen with the sentence it needs to say.</p>
+    </div>
+
+    <div class="about-cols">
+      <p>Before I was drawing interfaces, I was writing for the internet and managing social channels during a very difficult moment for a travel company. That taught me something Figma can't: people don't read screens, they scan for the thing they came for.</p>
+      <p>So I work from the content out. Hierarchy first, then layout, then the small parts nobody plans for: the empty table, the field that fails, the sentence after the button. I like interfaces that are quiet enough to be understood on the first try.</p>
+      <p>I'm finishing a degree in Systems Analysis and Development. It means I can read code, talk edge cases with developers, and build a prototype in HTML when Figma isn't the right tool for the question.</p>
+    </div>
+
+    <div class="band">
+      <span class="t">How I work</span>
+      <span class="s">four habits, no ceremony</span>
+    </div>
+
+    <div class="howgrid">
+      <div class="how">
+        <div class="num">01</div>
+        <h3>Ask first</h3>
+        <p>What is this person actually trying to do? I write it down and re-read the brief. Half of my good decisions came from that second read.</p>
+      </div>
+      <div class="how c2">
+        <div class="num">02</div>
+        <h3>Structure</h3>
+        <p>Flows and wireframes until the path is obvious. Wireframes are cheap, and I use them to kill weak ideas before they get beautiful.</p>
+      </div>
+      <div class="how c3">
+        <div class="num">03</div>
+        <h3>Craft</h3>
+        <p>Type, spacing, colour, states. I design the empty and the error versions too, because that is where products usually fall apart.</p>
+      </div>
+      <div class="how c4">
+        <div class="num">04</div>
+        <h3>Ship</h3>
+        <p>Handoff with real specs, then sit with the developers. Design isn't done when the file is done. It's done when it works.</p>
+      </div>
+    </div>
+
+    <div class="skills">
+      <span class="skill">Figma, advanced</span>
+      <span class="skill">Design systems</span>
+      <span class="skill">Prototyping</span>
+      <span class="skill">Usability tests</span>
+      <span class="skill">HTML / CSS</span>
+      <span class="skill">Python</span>
+      <span class="skill">LLMs</span>
+      <span class="skill">Scrum</span>
+    </div>
+
+    <div class="about-end">
+      <div class="q">“I'd rather ship something clear than defend something clever.”</div>
+      <div class="nr"><b>Available now</b> for a junior UX/UI role, remote or hybrid.<br>Portuguese native, English C1, Spanish and Italian basic.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== WORK INDEX -->
+<section class="index" id="work">
+  <div class="wrap">
+    <div class="kicker">02 / Selected work</div>
+    <h2>Three projects,<br><em>three different muscles.</em></h2>
+
+    <div class="rows">
+      <a class="row" href="#eldorado">
+        <span class="num">01</span>
+        <span class="nm">Instituto Eldorado</span>
+        <span class="ds">An internal platform for tracking company assets. Real client, real constraints, under NDA.</span>
+        <span class="tag">UX/UI</span>
+      </a>
+      <a class="row" href="#feed">
+        <span class="num">02</span>
+        <span class="nm">Feed</span>
+        <span class="ds">A five screen UI study for a text only social app. No images, no algorithm, nowhere to hide.</span>
+        <span class="tag">UI design</span>
+      </a>
+      <a class="row" href="#egali">
+        <span class="num">03</span>
+        <span class="nm">Egali</span>
+        <span class="ds">Public communication during a trust crisis. The project where I learned to write under pressure.</span>
+        <span class="tag">Comms</span>
+      </a>
+    </div>
+
+    <p class="note">Down the page there are also two smaller things: a portfolio shaped like a game, and a SQL agent that refuses to break the database.</p>
+  </div>
+</section>
+
+<!-- ============================== CASE 01 -->
+<section class="case" id="eldorado">
+  <div class="wrap">
+    <div class="case-top">
+      <div>
+        <div class="kicker">Case 01 / UX + UI / Internship, 2025</div>
+        <h2>A company that kept losing track <em>of its own assets.</em></h2>
+      </div>
+      <div class="nda">
+        <div class="micro">NDA</div>
+        <p>Screens stay private.<br>Process is on the table.</p>
+      </div>
+    </div>
+
+    <div class="meta">
+      <div><div class="k">Role</div><div class="v">UX/UI design intern</div></div>
+      <div><div class="k">Team</div><div class="v">Me, front-end, back-end, QA, 2 mentors</div></div>
+      <div><div class="k">Time</div><div class="v">8 weeks, weekly sprints</div></div>
+      <div><div class="k">Tools</div><div class="v">Figma, Miro, Scrum</div></div>
+    </div>
+
+    <div class="cols">
+      <div class="col-a">
+        <div class="prose">
+          <p>Instituto Eldorado is a research and development institute in Porto Alegre. Inside, equipment, licences and documents were tracked across spreadsheets, emails and memory. If you needed the projector, you asked around. If you needed to know who had it last, you asked three people.</p>
+        </div>
+
+        <blockquote class="pull">“Design a clear and intuitive internal platform to manage the company's assets.”</blockquote>
+        <div class="micro pull-k">The brief, in the client's words</div>
+
+        <div class="micro" style="margin:34px 0 12px">What I did</div>
+        <ul class="list">
+          <li><b>Persona and benchmark.</b> Studied the people who would use this every day, then compared a few asset management tools to see which patterns they already knew.</li>
+          <li><b>Flow.</b> Mapped sign in, registration, management and history, including the paths that fail: no results, duplicate asset, wrong permissions.</li>
+          <li><b>Screens.</b> Designed the three core screens in Figma with one shared component set: inputs, tables, filters, status tags.</li>
+          <li><b>Validation.</b> Presented to the client, reviewed edge cases with front-end and QA, adjusted before handoff.</li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">3 core screens</span>
+          <span class="chip o">Component set</span>
+          <span class="chip o">Clickable prototype</span>
+        </div>
+      </div>
+
+      <aside class="col-b">
+        <div class="steps">
+          <div class="micro">The process</div>
+          <div class="step"><span class="n">01</span><div><h4>Understand</h4><p>Persona, benchmark and client requirements.</p></div></div>
+          <div class="step"><span class="n">02</span><div><h4>Structure</h4><p>User flow and information architecture for three areas.</p></div></div>
+          <div class="step"><span class="n">03</span><div><h4>Design</h4><p>Screens, components, states, clickable prototype.</p></div></div>
+          <div class="step"><span class="n">04</span><div><h4>Handoff</h4><p>Specs, dev review, feasibility and edge cases.</p></div></div>
+        </div>
+
+        <div class="note-box">
+          <div class="k">What I'd do differently</div>
+          <p>We met the client in week three. The requirements moved after that meeting and part of the flow had to be rebuilt. Next time I'd push for that conversation before the first wireframe, even when the brief looks complete.</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="ia">
+      <div class="ia-h">
+        <span class="micro">Information architecture</span>
+        <span class="micro">4 areas / 3 delivered</span>
+      </div>
+      <div class="ia-row">
+        <div class="node">
+          <div class="k">01</div>
+          <div class="t">Sign in</div>
+          <div class="s">Access by profile</div>
+        </div>
+        <div class="arw"></div>
+        <div class="node n2">
+          <div class="k">02</div>
+          <div class="t">Assets</div>
+          <div class="s">List, filters, search</div>
+        </div>
+        <div class="arw"></div>
+        <div class="node n3">
+          <div class="k">03</div>
+          <div class="t">Asset detail</div>
+          <div class="s">Register and edit</div>
+        </div>
+        <div class="arw"></div>
+        <div class="node n4">
+          <div class="k">04</div>
+          <div class="t">History</div>
+          <div class="s">Who did what</div>
+        </div>
+        <div class="arw"></div>
+        <div class="node ghost">
+          <div class="k">05</div>
+          <div class="t">Permissions</div>
+          <div class="s">Mapped, not built</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CASE 02 -->
+<section class="feed" id="feed">
+  <div class="glow"></div>
+  <div class="wrap inner">
+    <div class="kicker">Case 02 / UI design / Self-initiated</div>
+    <h2>A social app with no pictures and <em>nowhere to hide.</em></h2>
+    <p class="sub">Five screens for a text only feed. The brief was one line: make reading feel calm again. The images below are the real screens, not mockups.</p>
+    <div class="tagline">
+      <span>Figma</span><span>5 screens</span><span>2024</span><span>Dark UI</span>
+    </div>
+
+    <div class="phones">
+      <figure class="phone"><img src="img/feed-screen.jpg" alt="Feed screen with text posts" width="1000" height="2167"><figcaption>01 / Feed</figcaption></figure>
+      <figure class="phone"><img src="img/feed-create.jpg" alt="Create post screen" width="1000" height="2167"><figcaption>02 / Create</figcaption></figure>
+      <figure class="phone"><img src="img/feed-edit.jpg" alt="Edit post screen" width="1000" height="2167"><figcaption>03 / Edit</figcaption></figure>
+      <figure class="phone"><img src="img/feed-delete.jpg" alt="Delete post confirmation" width="1000" height="2167"><figcaption>04 / Delete</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="states-sec">
+  <div class="wrap">
+    <div class="kicker" style="color:var(--violet)">Case 02 / UI design / What the screens had to do</div>
+    <h2>Pretty is the easy part. <em>The states are the work.</em></h2>
+
+    <div class="states-grid">
+      <div class="col-l">
+        <div class="micro" style="margin-bottom:8px">Five screens, five jobs</div>
+        <div class="state"><span class="nm"><span class="dot" style="background:var(--mag)"></span>Default feed</span><span class="tx">Reading, without a single image to break the rhythm.</span></div>
+        <div class="state"><span class="nm"><span class="dot" style="background:var(--violet)"></span>Writing</span><span class="tx">The composer opens over the feed. Writing stays in context.</span></div>
+        <div class="state"><span class="nm"><span class="dot" style="background:var(--tang)"></span>Editing</span><span class="tx">Same composer, filled. You always know what you are changing.</span></div>
+        <div class="state"><span class="nm"><span class="dot" style="background:var(--teal)"></span>Deleting</span><span class="tx">One confirmation, no red flood. Destructive doesn't need to shout.</span></div>
+        <div class="state"><span class="nm"><span class="dot" style="background:var(--plum)"></span>Empty state</span><span class="tx">“You're all caught up.” A dead end that still says something human.</span></div>
+
+        <div class="note-box lav">
+          <div class="k">What I took from it</div>
+          <p>A feed is a typographic problem before it is a layout problem. Once the hierarchy of title, body and metadata was right, almost every screen solved itself.</p>
+        </div>
+      </div>
+
+      <div class="col-r">
+        <div class="micro" style="margin-bottom:12px">Three decisions I can defend</div>
+        <div class="dgrid">
+          <div class="dcard d1">
+            <div class="num">01</div>
+            <h4>Serif for people, sans for the app</h4>
+            <p>What someone wrote is set in a serif, so it reads like writing. Buttons, labels and timestamps stay in sans, so you always know which voice is the app's.</p>
+          </div>
+          <div class="dcard d2">
+            <div class="num">02</div>
+            <h4>One colour, for actions only</h4>
+            <p>The accent blue appears on things you can press and nowhere else. Everything else is a shade of navy. Colour becomes a signpost, not decoration.</p>
+          </div>
+          <div class="dcard d3">
+            <div class="num">03</div>
+            <h4>Dark by default</h4>
+            <p>The product is for reading at night, in bed, with the phone close to your face. Deep navy instead of pure black keeps the contrast soft.</p>
+          </div>
+          <div class="dcard d4">
+            <div class="num">04</div>
+            <h4>Design the aftermath</h4>
+            <p>Delete, empty, edit. Three of the five screens exist for moments the product is missing something or about to lose it. That ratio is on purpose.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CASE 03 -->
+<section class="egali" id="egali">
+  <div class="wrap">
+    <div class="kicker">Case 03 / Communication / Egali, 2021 to 2022</div>
+    <h2>When the comments turned hostile, <em>someone had to answer them.</em></h2>
+
+    <div class="meta">
+      <div><div class="k">Role</div><div class="v">Social media and content</div></div>
+      <div><div class="k">Company</div><div class="v">Egali Intercâmbio</div></div>
+      <div><div class="k">Context</div><div class="v">Post pandemic, delayed programs</div></div>
+      <div><div class="k">Scope</div><div class="v">All public channels</div></div>
+    </div>
+
+    <div class="cols">
+      <div class="col-a">
+        <div class="prose">
+          <p>Egali sells exchange programs. After the pandemic, a lot of students were still waiting for trips that kept being postponed. The frustration landed on social media, in public, every single day, and it was aimed at whoever answered first.</p>
+          <p>I was that person. I managed the channels and the tone of the brand during the worst of it.</p>
+        </div>
+
+        <div class="micro" style="margin:34px 0 12px">What the job actually was</div>
+        <ul class="list">
+          <li><b>Answer, publicly.</b> Replies in the comments and in direct messages, in a tone that stayed calm when the comment wasn't.</li>
+          <li><b>Say only what was true.</b> I checked with operations before promising a date or a refund. Saying “I don't know yet, and here's when you'll hear from us” cost less than a confident lie.</li>
+          <li><b>Change what we published.</b> The calendar moved from selling trips to explaining delays. Promotion paused until the queue was under control.</li>
+          <li><b>Protect the people replying.</b> Wrote short guidelines so whoever was on the channel that day answered the same way.</li>
+        </ul>
+
+        <p class="close">I still write the replies before I write the captions. Tone is a design decision, and most brands only notice it when it breaks.</p>
+      </div>
+
+      <aside class="col-b">
+        <div class="blocks">
+          <div class="eb">
+            <div class="k">The situation</div>
+            <p>Hundreds of public complaints, a queue of students without dates, and a brand that had gone quiet because nobody knew what to say.</p>
+          </div>
+          <div class="eb b2">
+            <div class="k">What I changed</div>
+            <p>From silence to <b>named, dated answers</b>. From promotional content to <b>information people could use</b>.</p>
+          </div>
+          <div class="eb b3">
+            <div class="k">What happened</div>
+            <p>The threads stopped escalating. People got answers, even when the answer was “not yet”. Leadership recognised the work internally.</p>
+          </div>
+        </div>
+
+        <div class="quote">
+          <p>“People don't stay angry at a brand that answers them clearly. They stay angry at silence.”</p>
+          <div class="au">The thing I learned here</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MORE -->
+<section class="more" id="more">
+  <div class="wrap">
+    <div class="more-head">
+      <div>
+        <div class="kicker">03 / Two smaller things</div>
+        <h2>Same attention, <em>less space.</em></h2>
+      </div>
+      <p class="side">Side projects, experiments and one honest attempt at making a portfolio fun.</p>
+    </div>
+
+    <div class="duo">
+      <article class="tile">
+        <div class="hd" style="background:var(--mag); color:#fff"><span>01 / Quest</span><span>2024</span></div>
+        <div class="bd">
+          <div class="quest-imgs">
+            <div class="qi"><img src="img/quest-welcome.jpg" alt="Quest welcome screen" width="900" height="640"></div>
+            <div class="qi"><img src="img/quest-menu.jpg" alt="Quest mode selection screen" width="900" height="640"></div>
+            <div class="qi"><img src="img/quest-map.jpg" alt="Quest work map screen" width="900" height="640"></div>
+          </div>
+          <h4>My first portfolio, shaped like a game.</h4>
+          <p>Choose a mode, pick a mission, fight the boss to get my email. It was fun to build, and it taught me the limit of a metaphor: at some point the game starts hiding the work. This page is the answer to that lesson.</p>
+          <div class="meta-line"><span>Figma / Canva</span><span>9 screens</span></div>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="hd" style="background:var(--violet); color:#fff"><span>02 / SQL agent</span><span>Python</span></div>
+        <div class="bd">
+          <div class="term"><span class="pr">$</span> python agent.py <span class="sq">"top 5 clients"</span><br><br>SELECT c.nome,<br>&nbsp;&nbsp;SUM(i.qtd * i.preco) AS total<br>FROM clientes c JOIN pedidos p ...<br>GROUP BY c.nome ORDER BY total DESC<br><br><span class="ok">guardrails: SELECT only / one statement</span><br><span class="ok">connection: read-only</span><br><span class="ok">10 rows returned</span></div>
+          <h4>An agent that writes SQL and cannot break anything.</h4>
+          <p>A question in Portuguese becomes a query. Before it runs, it passes a validation layer: read only, one statement, no forbidden keywords, automatic row limit. Eleven automated tests, zero external dependencies.</p>
+          <div class="meta-line"><span><a href="https://github.com/LauraBatista934" target="_blank" rel="noopener">github.com/LauraBatista934</a></span><span>11 tests</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="bottomband">
+      <div class="bb-l">
+        <div class="k">03 / This page</div>
+        <div class="sw">
+          <s style="background:#2B0B33"></s><s style="background:#FF2E6E"></s><s style="background:#FF6B2C"></s>
+          <s style="background:#7A3CFF"></s><s style="background:#D6F24E"></s><s style="background:#00BFA6"></s>
+        </div>
+        <p>Designed and coded by me. HTML and CSS, printed to PDF by the browser. Fraunces for display, Manrope for everything else, six colours and a lot of white space.</p>
+      </div>
+      <div class="bb-r">
+        <div class="it"><div class="k">Award</div><div class="v"><b>Best Business Case</b><br>ESPM Award, 2017</div></div>
+        <div class="it"><div class="k">Courses</div><div class="v">Interaction Design, Instituto Eldorado<br>UI Design and IA, Alura</div></div>
+        <div class="it"><div class="k">Languages</div><div class="v">Portuguese native, English C1<br>Spanish and Italian basic</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker" style="color:var(--lime)">04 / Contact</div>
+    <div class="contact-head">
+      <h2 class="big">Let's<br>talk<em>.</em></h2>
+      <div class="por"><img src="img/portrait.jpg" alt="Laura de Freitas Macedo" width="900" height="920"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="clist">
+        <div class="item"><div class="k">Email</div><div class="v"><a href="mailto:mrs.laurafmsb@gmail.com"><b>mrs.laurafmsb@gmail.com</b></a></div></div>
+        <div class="item"><div class="k">WhatsApp</div><div class="v"><a href="https://wa.me/5551996837606" target="_blank" rel="noopener">+55 51 99683 7606</a></div></div>
+        <div class="item"><div class="k">LinkedIn</div><div class="v"><a href="https://www.linkedin.com/in/lauradefreitasmacedo/" target="_blank" rel="noopener">/in/lauradefreitasmacedo</a></div></div>
+        <div class="item"><div class="k">GitHub</div><div class="v"><a href="https://github.com/LauraBatista934" target="_blank" rel="noopener">/LauraBatista934</a></div></div>
+
+        <div class="contact-cta">
+          <a class="btn" href="mailto:mrs.laurafmsb@gmail.com">Send me an email</a>
+          <a class="btn ghost" href="portfolio.pdf" target="_blank" rel="noopener">Download PDF</a>
+        </div>
+      </div>
+
+      <div class="avail">
+        <div class="t">Available now</div>
+        <p>Looking for a junior UX/UI role, remote, in a team that cares about craft and about the people using the thing. Porto Alegre, Brazil, UTC-3.</p>
+      </div>
+    </div>
+
+    <p class="sig">Thank you for reading this far.<br>I usually reply the same day.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="f">© 2026 Laura de Freitas Macedo</span>
+    <span class="f"><a href="#top">Back to top ↑</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
