@@ -8,6 +8,7 @@
 <meta name="author" content="Laura de Freitas Macedo">
 <meta name="theme-color" content="#2B0B33">
 <link rel="canonical" href="https://laurabatista934.github.io/portfolio/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232B0B33'/%3E%3Crect x='9' y='9' width='14' height='14' fill='%23D6F24E'/%3E%3C/svg%3E">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Laura de Freitas Macedo / UX &amp; UI Designer">
@@ -97,6 +98,7 @@
     text-transform:uppercase; color:#fff; white-space:nowrap;
   }
   .nav-name s{ display:inline-block; width:8px; height:8px; background:var(--lime); margin-right:9px; vertical-align:1px; }
+  .nav-short{ display:none; }
   .nav-links{ display:flex; align-items:center; gap:30px; }
   .nav-links a{
     font-family:'M6'; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase;
@@ -562,10 +564,11 @@
   @media (max-width: 720px){
     body{ font-size:16px; }
     .wrap,.nav-in{ padding:0 20px; }
-    .nav-in{ height:58px; }
-    .nav-links{ gap:14px; }
-    .nav-links a:not(.nav-pdf){ display:none; }
-    .nav-pdf{ padding:9px 15px; }
+    .nav-in{ height:58px; gap:14px; }
+    .nav-name{ font-size:.64rem; letter-spacing:.13em; }
+    .nav-links{ gap:12px; }
+    .nav-links a{ font-size:.66rem; letter-spacing:.08em; padding:10px 0; }
+    .nav-links a.nav-pdf{ font-size:.66rem; letter-spacing:.06em; padding:9px 13px; }
     .nav-pdf .long{ display:none; }
     .nav-pdf .short{ display:inline; }
     .hero{ padding-top:96px; min-height:0; }
@@ -611,6 +614,15 @@
     footer .wrap{ flex-direction:column; gap:8px; }
   }
 
+  @media (max-width: 420px){
+    .nav-in{ padding:0 16px; gap:10px; }
+    .nav-links{ gap:10px; }
+    .nav-name{ padding:10px 0; }
+    .nav-full{ display:none; }
+    .nav-short{ display:inline; }
+    .nav-links a.nav-pdf{ padding:9px 12px; }
+  }
+
   @media (prefers-reduced-motion: reduce){
     html{ scroll-behavior:auto; }
     *{ transition:none !important; }
@@ -621,7 +633,7 @@
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="nav-name" href="#top"><s></s>Laura de Freitas</a>
+    <a class="nav-name" href="#top" aria-label="Laura de Freitas, back to top"><s></s><span class="nav-full">Laura de Freitas</span><span class="nav-short">Laura</span></a>
     <div class="nav-links">
       <a href="#work">Work</a>
       <a href="#about">About</a>
